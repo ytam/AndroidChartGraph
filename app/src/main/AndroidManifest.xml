@@ -20,12 +20,15 @@
             android:name=".PieChartExample"
             android:label="PieChart"
             android:parentActivityName=".MainActivity" />
-
         <activity
             android:name=".LineChartExample"
             android:label="LineChart"
             android:parentActivityName=".MainActivity" />
 
+        <activity
+            android:name=".HalfChartActivity"
+            android:label="LineChart"
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>

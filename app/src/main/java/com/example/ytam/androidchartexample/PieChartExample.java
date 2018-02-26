@@ -4,6 +4,7 @@ import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.github.mikephil.charting.animation.Easing;
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.components.Description;
 import com.github.mikephil.charting.data.Entry;
@@ -66,6 +67,8 @@ public class PieChartExample extends AppCompatActivity  {
         chart = (PieChart) findViewById(R.id.pieChart);
         chart.setCenterText("Toplam "+toplam);
 
+        chart.animateY(1000, Easing.EasingOption.EaseInCubic);
+        chart.setDrawHoleEnabled(true);  //Ortadaki boşluk
         chart.setDrawEntryLabels(true);
         chart.setDescription(description);
         chart.setRotationEnabled(true);
