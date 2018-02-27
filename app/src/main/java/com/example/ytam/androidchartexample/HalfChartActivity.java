@@ -14,7 +14,6 @@ import com.github.mikephil.charting.components.Legend;
 import com.github.mikephil.charting.data.PieData;
 import com.github.mikephil.charting.data.PieDataSet;
 import com.github.mikephil.charting.data.PieEntry;
-import com.github.mikephil.charting.formatter.PercentFormatter;
 import com.github.mikephil.charting.utils.ColorTemplate;
 
 import java.util.ArrayList;
@@ -26,6 +25,7 @@ public class HalfChartActivity extends AppCompatActivity {
     int rainFall[] ={98,102,120,95,120};
     String monthNames[] = {"Kadın Doğum", "Polikinik","Genel Cerahi", "Psikoloji","Üroloji"};
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,28 +33,28 @@ public class HalfChartActivity extends AppCompatActivity {
 
         halfPieChart =findViewById(R.id.halfChart);
         halfPieChart.setBackgroundColor(Color.WHITE);
-        halfPieChart.setUsePercentValues(true);
+        halfPieChart.setUsePercentValues(false);
         halfPieChart.getDescription().setEnabled(false);
         halfPieChart.setMaxAngle(180);
         halfPieChart.setRotationAngle(180);
         halfPieChart.animateY(1000, Easing.EasingOption.EaseInCubic);
 
+
         Legend l =halfPieChart.getLegend();
         l.setVerticalAlignment(Legend.LegendVerticalAlignment.TOP);
-        l.setHorizontalAlignment(Legend.LegendHorizontalAlignment.CENTER);
-        l.setOrientation(Legend.LegendOrientation.HORIZONTAL);
+        l.setHorizontalAlignment(Legend.LegendHorizontalAlignment.RIGHT);
+        l.setOrientation(Legend.LegendOrientation.VERTICAL);
         l.setDrawInside(false);
-        l.setYOffset(50f);
+        l.setYOffset(25f);
 
-
-
-        moveOffScreen();
         setUpPieChart();
+        moveOffScreen();
     }
 
     private void setUpPieChart() {
 
-        ArrayList<PieEntry> pieEntries = new ArrayList<>();
+        List<PieEntry> pieEntries = new ArrayList<>();
+
 
         int toplam =0 ;
 
@@ -65,14 +65,14 @@ public class HalfChartActivity extends AppCompatActivity {
 
         }
         PieDataSet dataSet = new PieDataSet(pieEntries,"Aylık rapor");
-        dataSet.setColors(ColorTemplate.MATERIAL_COLORS);
-        dataSet.setSliceSpace(3f);
+        dataSet.setColors(ColorTemplate.COLORFUL_COLORS);
+//        dataSet.setSliceSpace(3f);
         dataSet.setSelectionShift(5f);
 
         PieData data = new PieData(dataSet);
         data.setValueTextSize(15);
         data.setValueTextColor(Color.WHITE);
-        data.setValueFormatter(new PercentFormatter());
+        data.setValueFormatter(new MyValueFormatter());
 
         Description description = new Description();
         description.setText("Aylık Gelen  Hasta Sayıları");
@@ -81,9 +81,10 @@ public class HalfChartActivity extends AppCompatActivity {
         halfPieChart.setData(data);
         halfPieChart.invalidate();
 
+        halfPieChart.setCenterText("Toplam "+toplam+" Kişi");
+        halfPieChart.setCenterTextSize(20f);
+
     }
-
-
 
     private void moveOffScreen(){
         Display display= getWindowManager().getDefaultDisplay();

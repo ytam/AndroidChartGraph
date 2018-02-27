@@ -33,6 +33,9 @@ dependencies {
     //MpAndroidChart
     implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
 
+    //HorizontalBarGraph
+    compile 'com.github.felixsoares:HorizontalBarGraph:1.0'
+
 
 }
 apply plugin: 'com.jakewharton.butterknife'

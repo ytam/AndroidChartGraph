@@ -24,10 +24,23 @@
             android:name=".LineChartExample"
             android:label="LineChart"
             android:parentActivityName=".MainActivity" />
-
         <activity
             android:name=".HalfChartActivity"
-            android:label="LineChart"
+            android:label="PieChart"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".BarChartActivity"
+            android:label="BarChart"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".BarChart2Activity"
+            android:label="BarChart"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".PieChart2Example"
+            android:label="pieChart"
             android:parentActivityName=".MainActivity" />
     </application>
 

@@ -8,24 +8,29 @@
     tools:context="com.example.ytam.androidchartexample.MainActivity">
 
 
-
     <Button
         android:id="@+id/btnExample1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="Pie Chart" />
+    <Button
+        android:id="@+id/btnExample6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Pie Chart2" />
 
     <Button
         android:id="@+id/btnExample2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="Line Chart" />
 
     <Button
         android:id="@+id/btnExample3"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="Half Pie Chart" />
@@ -33,10 +38,17 @@
 
     <Button
         android:id="@+id/btnExample4"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Örnek 2" />
+        android:text="Bar Chart" />
+
+    <Button
+        android:id="@+id/btnExample5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Bar Chart2" />
 
 
 </LinearLayout>

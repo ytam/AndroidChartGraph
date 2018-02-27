@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginBottom="25dp"
     tools:context="com.example.ytam.androidchartexample.HalfChartActivity">
 
     <com.github.mikephil.charting.charts.PieChart

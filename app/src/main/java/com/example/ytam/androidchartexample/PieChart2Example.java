@@ -1,49 +1,48 @@
 package com.example.ytam.androidchartexample;
 
 import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.widget.TextView;
 
 import com.github.mikephil.charting.animation.Easing;
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.components.Description;
-import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.PieData;
 import com.github.mikephil.charting.data.PieDataSet;
 import com.github.mikephil.charting.data.PieEntry;
-import com.github.mikephil.charting.formatter.IValueFormatter;
 import com.github.mikephil.charting.utils.ColorTemplate;
-import com.github.mikephil.charting.utils.ViewPortHandler;
 
-import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class PieChartExample extends AppCompatActivity  {
+public class PieChart2Example extends AppCompatActivity  {
 
     int rainFall[] ={98,102,120,95,120};
     String monthNames[] = {"Kadın Doğum", "Polikinik","Genel Cerahi", "Psikoloji","Üroloji"};
+    int toplam =0 ;
+
 
 
     PieChart chart;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_example1);
-        ButterKnife.bind(this);
+        setContentView(R.layout.activity_example2);
 
+        TextView textView =(TextView) findViewById(R.id.myTextView);
         setUpPieChart();
+        textView.setText("Toplam : "+toplam);
+
 
     }
 
     private void setUpPieChart() {
 
-        List<PieEntry> pieEntries = new ArrayList<>();
 
-        int toplam =0 ;
+        List<PieEntry> pieEntries = new ArrayList<>();
 
         for (int i = 0; i <rainFall.length ; i++) {
             pieEntries.add(new PieEntry(rainFall[i],monthNames[i]));
@@ -66,10 +65,11 @@ public class PieChartExample extends AppCompatActivity  {
 
         chart = (PieChart) findViewById(R.id.pieChart);
 
-        chart.setCenterText("Toplam "+toplam);
+//        chart.setCenterText("Toplam "+toplam);
+
 
         chart.animateY(1000, Easing.EasingOption.EaseInCubic);
-        chart.setDrawHoleEnabled(true);  //Ortadaki boşluk
+        chart.setDrawHoleEnabled(false);  //Ortadaki boşluk
         chart.setDrawEntryLabels(true);
         chart.setDescription(description);
         chart.setRotationEnabled(true);
@@ -77,5 +77,12 @@ public class PieChartExample extends AppCompatActivity  {
         chart.invalidate();
 
     }
+
+
+
+
+
+
+
 
 }

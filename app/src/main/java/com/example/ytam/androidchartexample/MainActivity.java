@@ -26,14 +26,35 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btnExample2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, LineChartExample    .class));
+                startActivity(new Intent(MainActivity.this, LineChartExample.class));
             }
         });
 
         findViewById(R.id.btnExample3).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, HalfChartActivity    .class));
+                startActivity(new Intent(MainActivity.this, HalfChartActivity.class));
+            }
+        });
+
+        findViewById(R.id.btnExample4).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, BarChartActivity.class));
+            }
+        });
+
+        findViewById(R.id.btnExample5).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, BarChart2Activity.class));
+            }
+        });
+
+        findViewById(R.id.btnExample6).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, PieChart2Example.class));
             }
         });
 
