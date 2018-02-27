@@ -32,15 +32,26 @@
             android:name=".BarChartActivity"
             android:label="BarChart"
             android:parentActivityName=".MainActivity" />
-
         <activity
             android:name=".BarChart2Activity"
+            android:label="BarChart"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".BarChart3Activity"
+            android:label="BarChart"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".BarChart4Activity"
             android:label="BarChart"
             android:parentActivityName=".MainActivity" />
 
         <activity
             android:name=".PieChart2Example"
             android:label="pieChart"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PositiveNegativeActivity"
+            android:label="Positive Negative Bar Chart"
             android:parentActivityName=".MainActivity" />
     </application>
 
