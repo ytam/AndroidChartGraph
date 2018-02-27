@@ -44,7 +44,6 @@
             android:name=".BarChart4Activity"
             android:label="BarChart"
             android:parentActivityName=".MainActivity" />
-
         <activity
             android:name=".PieChart2Example"
             android:label="pieChart"
@@ -53,6 +52,17 @@
             android:name=".PositiveNegativeActivity"
             android:label="Positive Negative Bar Chart"
             android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FitChart"
+            android:label="FitChart"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".HorizontalBarActivity"
+            android:label="Horizontal Bar Chart"
+            android:parentActivityName=".MainActivity" />
+
+
     </application>
 
 </manifest>

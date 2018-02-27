@@ -64,7 +64,6 @@ public class BarChart4Activity extends AppCompatActivity {
         barChart.setData(data);
         barChart.setFitBars(true);
         barChart.invalidate();
-
     }
 
     private class MyValueFormatter implements IValueFormatter {
@@ -80,21 +79,5 @@ public class BarChart4Activity extends AppCompatActivity {
             return mFormat.format(value);
         }
     }
-
-    private class MyAxisValueFormatter implements IAxisValueFormatter {
-
-        private DecimalFormat mFormat;
-
-        public MyAxisValueFormatter(){
-            mFormat= new DecimalFormat("##### Kişi");
-        }
-
-
-        @Override
-        public String getFormattedValue(float value, AxisBase axis) {
-            return mFormat.format(value);
-        }
-    }
-
 
 }

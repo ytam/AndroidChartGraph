@@ -80,7 +80,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Pos Neg Bar Chart" />
+            android:text=" Bar Chart" />
+
+        <Button
+            android:id="@+id/btnExample11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Horizontal Bar Chart" />
+
 
     </LinearLayout>
 

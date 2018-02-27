@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.github.mikephil.charting.charts.HorizontalBarChart;
+
 import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
@@ -76,6 +78,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, BarChart4Activity.class));
+            }
+        });
+
+        findViewById(R.id.btnExample10).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, FitChart.class));
+            }
+        });
+
+        findViewById(R.id.btnExample11).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, HorizontalBarActivity.class));
             }
         });
 
