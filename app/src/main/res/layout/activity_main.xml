@@ -12,26 +12,29 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <Button
-            android:id="@+id/btnExample1"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="Pie Chart" />
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
 
-        <Button
-            android:id="@+id/btnExample6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="Pie Chart2" />
+            <Button
+                android:id="@+id/btnExample1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="Pie Chart" />
 
-        <Button
-            android:id="@+id/btnExample2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="Line Chart" />
+            <Button
+                android:id="@+id/btnExample6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="Pie Chart2" />
+
+        </LinearLayout>
 
         <Button
             android:id="@+id/btnExample3"
@@ -40,40 +43,60 @@
             android:layout_gravity="center_horizontal"
             android:text="Half Pie Chart" />
 
-        <Button
-            android:id="@+id/btnExample4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="Bar Chart" />
 
         <Button
-            android:id="@+id/btnExample5"
+            android:id="@+id/btnExample2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Bar Chart2" />
+            android:text="Line Chart" />
 
-        <Button
-            android:id="@+id/btnExample7"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="Positive negative" />
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
 
-        <Button
-            android:id="@+id/btnExample8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="Bar Chart3" />
+            <Button
+                android:id="@+id/btnExample4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="Bar Chart" />
 
-        <Button
-            android:id="@+id/btnExample9"
+            <Button
+                android:id="@+id/btnExample5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="Bar Chart2" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text=" Bar Chart4" />
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnExample8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="Bar Chart3" />
+
+            <Button
+                android:id="@+id/btnExample9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text=" Bar Chart4" />
+
+        </LinearLayout>
 
         <Button
             android:id="@+id/btnExample10"
@@ -82,6 +105,15 @@
             android:layout_gravity="center_horizontal"
             android:text=" Bar Chart" />
 
+
+        <Button
+            android:id="@+id/btnExample7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Positive negative" />
+
+
         <Button
             android:id="@+id/btnExample11"
             android:layout_width="match_parent"
@@ -89,6 +121,12 @@
             android:layout_gravity="center_horizontal"
             android:text="Horizontal Bar Chart" />
 
+        <Button
+            android:id="@+id/btnExample12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="StackedBar Negative" />
 
     </LinearLayout>
 

@@ -56,12 +56,14 @@
             android:name=".FitChart"
             android:label="FitChart"
             android:parentActivityName=".MainActivity" />
-
         <activity
             android:name=".HorizontalBarActivity"
             android:label="Horizontal Bar Chart"
             android:parentActivityName=".MainActivity" />
-
+        <activity
+            android:name=".StackedBarNegativeActivity"
+            android:label="StackedBarNegativeActivity"
+            android:parentActivityName=".MainActivity" />
 
     </application>
 

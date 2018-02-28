@@ -33,7 +33,7 @@ public class BarChart3Activity extends AppCompatActivity {
 
         barWidth = 0.3f;
         barSpace = 0f;
-        groupSpace = 0.4f;
+        groupSpace = 0.1f;
 
         chart = (BarChart) findViewById(R.id.barChart);
         chart.setDescription(null);
