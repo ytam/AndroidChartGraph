@@ -64,6 +64,23 @@
             android:name=".StackedBarNegativeActivity"
             android:label="StackedBarNegativeActivity"
             android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PyramideActivity"
+            android:label="PyramideActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PieNewActivity"
+            android:label="PieNewActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".LineActivity"
+            android:label="LineActivity"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".TagCloudActivity"
+            android:label="TagCloudActivity"
+            android:parentActivityName=".MainActivity" />
 
     </application>
 

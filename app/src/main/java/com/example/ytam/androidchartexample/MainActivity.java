@@ -100,5 +100,32 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.btnExample13).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, PyramideActivity.class));
+            }
+        });
+
+        findViewById(R.id.btnExample14).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, PieNewActivity.class));
+            }
+        });
+
+        findViewById(R.id.btnExample15).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, LineActivity.class));
+            }
+        });
+
+        findViewById(R.id.btnExample16).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, TagCloudActivity.class));
+            }
+        });
     }
 }
