@@ -31,13 +31,13 @@ public class PieNewActivity extends AppCompatActivity {
 
         Pie pie = AnyChart.pie();
 
-        pie.setOnClickListener(new ListenersInterface.OnClickListener(new String[]{"x", "value"}) {
-            @Override
-            public void onClick(Event event) {
-                Toast.makeText(PieNewActivity.this, event.getData().get("x") + ":" + event.getData().get("value")+" Kişi", Toast.LENGTH_SHORT).show();
-            }
-        });
-
+//        pie.setOnClickListener(new ListenersInterface.OnClickListener(new String[]{"x", "value"}) {
+//            @Override
+//            public void onClick(Event event) {
+//                Toast.makeText(PieNewActivity.this, event.getData().get("x") + ":" + event.getData().get("value")+" Kişi", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//
 
 
 
@@ -50,6 +50,8 @@ public class PieNewActivity extends AppCompatActivity {
 
 
         pie.setData(data);
+        pie.getTooltip().setFormat("Kişi Sayısı: {%Value}");
+//        tagCloud.getTooltip().setFormat("adasdasdasdas: ${%Value} min.\\nDuration: ${%X} min.");
 
         pie.setTitle("Hasta dağılımı");
 

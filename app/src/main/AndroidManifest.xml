@@ -76,12 +76,15 @@
             android:name=".LineActivity"
             android:label="LineActivity"
             android:parentActivityName=".MainActivity" />
-
         <activity
             android:name=".TagCloudActivity"
             android:label="TagCloudActivity"
             android:parentActivityName=".MainActivity" />
 
+        <activity
+            android:name=".PieViewActivity"
+            android:label="PieViewActivity"
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>

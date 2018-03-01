@@ -25,7 +25,7 @@ public class TagCloudActivity extends AppCompatActivity {
         TagCloud tagCloud = AnyChart.tagCloud();
 
         anyChartView.setContentDescription(null);
-        tagCloud.setTitle("World Population");
+        tagCloud.setTitle("Dünya Popilasyonu");
 
         OrdinalColor ordinalColor = new OrdinalColor();
         ordinalColor.setColors(new String[] {
@@ -36,6 +36,7 @@ public class TagCloudActivity extends AppCompatActivity {
 
         tagCloud.getColorRange().setEnabled(true);
         tagCloud.getColorRange().setColorLineSize(15d);
+
 
         List<DataEntry> data = new ArrayList<>();
         data.add(new CategoryValueDataEntry("China", "asia", 1383220000));
@@ -97,6 +98,7 @@ public class TagCloudActivity extends AppCompatActivity {
         data.add(new CategoryValueDataEntry("Israel", "asia", 8690220));
         data.add(new CategoryValueDataEntry("Switzerland", "europe", 8417700));
 
+        tagCloud.getTooltip().setFormat("Nufus: {%Value}\\nAdı: {%X}");
         tagCloud.setData(data);
 
         anyChartView.setChart(tagCloud);

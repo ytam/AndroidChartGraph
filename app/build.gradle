@@ -33,12 +33,10 @@ dependencies {
     //MpAndroidChart
     implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
 
-    compile 'com.github.bmarrdev:android-DecoView-charting:v1.2'
-
-    compile 'com.txusballesteros:FitChart:1.0'
-    compile 'com.github.mancj:SlimChart:0.1.2'
-
 
     compile 'com.github.AnyChart:AnyChart-Android:0.1.1'
+
+    compile 'com.github.zurche:plain-pie:v0.2.4'
+
 }
 apply plugin: 'com.jakewharton.butterknife'

@@ -127,5 +127,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, TagCloudActivity.class));
             }
         });
+
+        findViewById(R.id.btnExample17).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, PieViewActivity.class));
+            }
+        });
     }
 }
