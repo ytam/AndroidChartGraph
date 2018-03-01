@@ -258,7 +258,7 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="#EEEEEE"
-                android:text="next" />
+                android:text="New Pie " />
         </LinearLayout>
 
     </LinearLayout>

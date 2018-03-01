@@ -134,5 +134,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, PieViewActivity.class));
             }
         });
+
+        findViewById(R.id.btnExample18).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, PieChartLibActivity.class));
+            }
+        });
     }
 }

@@ -47,7 +47,7 @@ public class BarChart2Activity extends AppCompatActivity {
         barChart.setData(barData);
 
 
-        String monthNames[] = {"Ocak", "Şubat", "Mart", "Nisan","Mayıs"};
+        String monthNames[] = {"Ocak", "Şubat", "Mart", "Nisan", "Mayıs"};
         XAxis xAxis = barChart.getXAxis();
         xAxis.setValueFormatter(new MyXAxisValueFormatter(monthNames));
         xAxis.setPosition(XAxis.XAxisPosition.BOTH_SIDED);
@@ -55,6 +55,7 @@ public class BarChart2Activity extends AppCompatActivity {
         xAxis.setCenterAxisLabels(true);
 //        xAxis.setAxisMinimum(1);
 
+        barChart.invalidate();
     }
 
     public class MyXAxisValueFormatter implements IAxisValueFormatter {

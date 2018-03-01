@@ -38,5 +38,9 @@ dependencies {
 
     compile 'com.github.zurche:plain-pie:v0.2.4'
 
+    compile 'devlight.io:arcprogressstackview:1.0.4'
+
+    compile 'com.github.razerdp:AnimatedPieView:1.2.1'
+
 }
 apply plugin: 'com.jakewharton.butterknife'

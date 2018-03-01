@@ -4,7 +4,6 @@ package com.example.ytam.androidchartexample;
  * Created by ytam on 28.02.2018.
  */
 
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentActivity;
