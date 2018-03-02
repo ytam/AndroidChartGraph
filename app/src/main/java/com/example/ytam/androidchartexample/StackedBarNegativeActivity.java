@@ -29,6 +29,8 @@ public class StackedBarNegativeActivity extends AppCompatActivity implements
         OnChartValueSelectedListener {
 
     private HorizontalBarChart mChart;
+    String []xLabels = new String[]{"Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "7a", "70+", "70+", "70+", "70+"};
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +53,7 @@ public class StackedBarNegativeActivity extends AppCompatActivity implements
         mChart.getAxisLeft().setEnabled(false);
         mChart.getAxisRight().setAxisMaximum(25f);
         mChart.getAxisRight().setAxisMinimum(-25f);
-        mChart.getAxisRight().setDrawGridLines(false);
+        mChart.getAxisRight().setDrawGridLines(true);
         mChart.getAxisRight().setDrawZeroLine(true);
         mChart.getAxisRight().setLabelCount(7, false);
         mChart.getAxisRight().setValueFormatter(new CustomFormatter());
@@ -59,7 +61,7 @@ public class StackedBarNegativeActivity extends AppCompatActivity implements
 
         XAxis xAxis = mChart.getXAxis();
         xAxis.setPosition(XAxisPosition.BOTH_SIDED);
-        xAxis.setDrawGridLines(false);
+        xAxis.setDrawGridLines(true);
         xAxis.setDrawAxisLine(false);
         xAxis.setTextSize(9f);
         xAxis.setAxisMinimum(0f);
@@ -78,6 +80,8 @@ public class StackedBarNegativeActivity extends AppCompatActivity implements
             }
         });
 
+
+
         Legend l = mChart.getLegend();
         l.setVerticalAlignment(Legend.LegendVerticalAlignment.BOTTOM);
         l.setHorizontalAlignment(Legend.LegendHorizontalAlignment.RIGHT);
@@ -89,15 +93,16 @@ public class StackedBarNegativeActivity extends AppCompatActivity implements
 
         // IMPORTANT: When using negative values in stacked bars, always make sure the negative values are in the array first
         ArrayList<BarEntry> yValues = new ArrayList<BarEntry>();
-        yValues.add(new BarEntry(5, new float[]{ -10, 10 }));
-        yValues.add(new BarEntry(15, new float[]{ -12, 13 }));
-        yValues.add(new BarEntry(25, new float[]{ -15, 15 }));
-        yValues.add(new BarEntry(35, new float[]{ -17, 17 }));
-        yValues.add(new BarEntry(45, new float[]{ -19, 20 }));
-        yValues.add(new BarEntry(45, new float[]{ -19, 20 }));
-        yValues.add(new BarEntry(55, new float[]{ -10, 19 }));
-        yValues.add(new BarEntry(65, new float[]{ -3, 4 }));
-        yValues.add(new BarEntry(75, new float[]{ -2, 1 }));
+        yValues.add(new BarEntry(5, new float[]{ -10, 5 }));
+        yValues.add(new BarEntry(15, new float[]{ -10, 10 }));
+        yValues.add(new BarEntry(25, new float[]{ -12, 13 }));
+        yValues.add(new BarEntry(35, new float[]{ -15, 15 }));
+        yValues.add(new BarEntry(45, new float[]{ -17, 17 }));
+        yValues.add(new BarEntry(55, new float[]{ -19, 20 }));
+        yValues.add(new BarEntry(65, new float[]{ -19, 20 }));
+        yValues.add(new BarEntry(75, new float[]{ -10, 10 }));
+        yValues.add(new BarEntry(85, new float[]{ -5, 6 }));
+
 
 
         BarDataSet set = new BarDataSet(yValues, "Yaş Aralığı");
@@ -110,7 +115,6 @@ public class StackedBarNegativeActivity extends AppCompatActivity implements
                 "Erkek", "Kadın"
         });
 
-        String []xLabels = new String[]{"0-10", "10-20", "20-30", "30-40", "40-50", "50-60", "60-70", "70+"};
 
         BarData data = new BarData(set);
         data.setBarWidth(8.5f);

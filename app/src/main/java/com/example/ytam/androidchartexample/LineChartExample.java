@@ -20,6 +20,8 @@ import java.util.ArrayList;
 public class LineChartExample extends AppCompatActivity  {
 
     public LineChart lineChart;
+    String monthNames[] = {"Kadın Doğum", "Polikinik","Genel Cerahi", "Psikoloji","Üroloji"};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

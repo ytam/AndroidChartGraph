@@ -89,6 +89,10 @@
             android:label="PieChartLibActivity"
             android:parentActivityName=".MainActivity" />
 
+        <activity
+            android:name=".denem"
+            android:label="deneme"
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>

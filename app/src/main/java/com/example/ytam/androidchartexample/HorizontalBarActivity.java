@@ -3,9 +3,11 @@ package com.example.ytam.androidchartexample;
 import android.annotation.SuppressLint;
 import android.graphics.RectF;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.SeekBar;
 
 import com.github.mikephil.charting.charts.HorizontalBarChart;
+import com.github.mikephil.charting.components.AxisBase;
 import com.github.mikephil.charting.components.Legend;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.components.YAxis;
@@ -20,7 +22,7 @@ import com.github.mikephil.charting.utils.MPPointF;
 
 import java.util.ArrayList;
 
-public class HorizontalBarActivity extends DemoBase implements SeekBar.OnSeekBarChangeListener,
+public class HorizontalBarActivity extends AppCompatActivity implements SeekBar.OnSeekBarChangeListener,
         OnChartValueSelectedListener {
 
     protected HorizontalBarChart mChart;
@@ -34,25 +36,12 @@ public class HorizontalBarActivity extends DemoBase implements SeekBar.OnSeekBar
 
         mChart = (HorizontalBarChart) findViewById(R.id.horizontalBar);
         mChart.setOnChartValueSelectedListener(this);
-        // mChart.setHighlightEnabled(false);
-
         mChart.setDrawBarShadow(false);
-
         mChart.setDrawValueAboveBar(true);
-
         mChart.getDescription().setEnabled(false);
-
-        // if more than 60 entries are displayed in the chart, no values will be
-        // drawn
         mChart.setMaxVisibleValueCount(60);
-
-        // scaling can now only be done on x- and y-axis separately
         mChart.setPinchZoom(false);
-
-        // draw shadows for each bar that show the maximum value
-        // mChart.setDrawBarShadow(true);
-
-        mChart.setDrawGridBackground(false);
+        mChart.setDrawGridBackground(true);
 
         XAxis xl = mChart.getXAxis();
         xl.setPosition(XAxis.XAxisPosition.BOTTOM);

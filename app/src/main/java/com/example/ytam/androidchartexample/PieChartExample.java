@@ -22,16 +22,14 @@ public class PieChartExample extends AppCompatActivity  {
     int rainFall[] ={98,102,120,95,120};
     String monthNames[] = {"Kadın Doğum", "Polikinik","Genel Cerahi", "Psikoloji","Üroloji"};
 
-
     PieChart chart;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_example1);
-        ButterKnife.bind(this);
 
         setUpPieChart();
-
     }
 
     private void setUpPieChart() {
@@ -46,6 +44,7 @@ public class PieChartExample extends AppCompatActivity  {
             toplam +=  rainFall[i];
 
         }
+
         PieDataSet dataSet = new PieDataSet(pieEntries,"Aylık rapor");
         dataSet.setColors(ColorTemplate.COLORFUL_COLORS);
 
@@ -61,7 +60,7 @@ public class PieChartExample extends AppCompatActivity  {
 
         chart = (PieChart) findViewById(R.id.pieChart);
 
-        chart.setCenterText("Toplam "+toplam);
+        chart.setCenterText("Toplam Kişi: "+toplam);
 
         chart.animateY(1000, Easing.EasingOption.EaseInCubic);
         chart.setDrawHoleEnabled(true);  //Ortadaki boşluk
