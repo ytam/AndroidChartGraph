@@ -16,15 +16,12 @@ import com.github.mikephil.charting.formatter.LargeValueFormatter;
 
 import java.util.ArrayList;
 
-
 public class BarChart3Activity extends AppCompatActivity {
-
 
     private BarChart chart;
     float barWidth;
     float barSpace;
     float groupSpace;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

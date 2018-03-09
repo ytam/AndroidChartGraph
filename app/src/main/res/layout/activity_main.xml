@@ -261,15 +261,37 @@
                 android:text="New Pie " />
         </LinearLayout>
 
-        <Button
-            android:id="@+id/btnExample19"
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:background="#EEEEEE"
-            android:text="New Pie " />
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnExample19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#EEEEEE"
+                android:text="New Pie " />
+
+            <Button
+                android:id="@+id/btnExample20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#EEEEEE"
+                android:text="Bar Chart " />
+
+        </LinearLayout>
+
+
+
 
     </LinearLayout>
 

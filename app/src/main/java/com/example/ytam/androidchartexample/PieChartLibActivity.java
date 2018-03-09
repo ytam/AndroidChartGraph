@@ -52,8 +52,8 @@ public class PieChartLibActivity extends AppCompatActivity {
                             desc.setTextSize(15);
                             desc.setTextColor(Color.BLACK);
                             desc.setText(String.format(Locale.getDefault(),
-                                    "%s \nKişi Sayısı = %s;",
-                                    pieInfo.getDesc(), pieInfo.getValue(), isFloatUp));
+                                    "%s \nKişi Sayısı = %s",
+                                    pieInfo.getDesc(), (int)pieInfo.getValue(), isFloatUp));
                         }
                     })
                     .drawText(true)

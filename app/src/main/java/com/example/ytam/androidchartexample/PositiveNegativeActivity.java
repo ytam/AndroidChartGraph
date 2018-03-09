@@ -76,7 +76,7 @@ public class PositiveNegativeActivity extends AppCompatActivity {
         data.setBarWidth(0.8f);
 
         Description description = new Description();
-        description.setText("Aylara göre Hasta Sayıları");
+        description.setText("Hasta Sayıları");
         description.setTextSize(15);
 
         barChart.setDescription(description);

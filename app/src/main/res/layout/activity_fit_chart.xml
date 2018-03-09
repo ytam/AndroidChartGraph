@@ -10,7 +10,7 @@
 
     <TextView
         android:textSize="25sp"
-        android:text="Polniklik Doluluk oranları"
+        android:text="Poliklinik Doluluk oranları"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

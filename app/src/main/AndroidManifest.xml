@@ -88,11 +88,11 @@
             android:name=".PieChartLibActivity"
             android:label="PieChartLibActivity"
             android:parentActivityName=".MainActivity" />
-
         <activity
             android:name=".denem"
             android:label="deneme"
             android:parentActivityName=".MainActivity" />
+        <activity android:name=".LineFromAnother"></activity>
     </application>
 
 </manifest>

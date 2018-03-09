@@ -26,13 +26,8 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
-    //Butterknife library
-    compile 'com.jakewharton:butterknife:8.4.0'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
-
     //MpAndroidChart
     implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
-
 
     compile 'com.github.AnyChart:AnyChart-Android:0.1.1'
 
